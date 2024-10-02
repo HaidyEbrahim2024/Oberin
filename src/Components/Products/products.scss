@@ -1,0 +1,38 @@
+.Prouducts {
+    min-height: 50vh;
+    .text {
+      h2 {
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+    .Nav_meals{
+      gap: 0!important;
+    }}
+    .Nav_link {
+      background-color: white;
+      // padding: 2rem;/* لون الخلفية عند عدم التحديد */
+      color: #000000;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 15px 0 10px 0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      @media screen and (max-width: 767px) {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+    }
+    .pp{
+      @media screen and (max-width: 767px) {
+        display: flex!important;
+        flex-direction: column!important;
+      }
+    }
+   
+  }
+  

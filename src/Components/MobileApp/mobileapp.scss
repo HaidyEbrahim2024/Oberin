@@ -1,0 +1,75 @@
+.MobileApp {
+  min-height: 50vh;
+  margin: 1rem 0;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+   margin-top: 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 1rem;
+
+  }
+  .container {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .text {
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      p {
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          margin: 0;
+        }
+        @media screen and (max-width: 767px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .Apps {
+    img {
+      width: 25%;
+      height: 20vh;
+      object-fit: contain;
+      border-radius: 1rem;
+    }
+    .img {
+      width: 27.5%;
+      height: 20vh;
+      object-fit: contain;
+    }
+    .image {
+      cursor: pointer;
+    }
+  }
+  .MobileApp {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      width: 100% !important;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100% !important;
+    }
+    img {
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            width: 100%  !important;
+          }
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+    }
+  }
+}

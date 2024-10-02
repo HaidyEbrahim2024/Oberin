@@ -1,0 +1,652 @@
+{
+  "breakfast": [
+    {
+      "id": 1,
+      "Categuary": "BreakFast",
+      "img": "./image_api/1.jpeg",
+      "title": "Yogry",
+      "price": 15,
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+      "type":"BreakFast",
+      "important":"Yogurt with fruit contains a number of vitamins that strengthen the body  ",
+      "Gradions": "This Meal froms diffrent of fruits(apple , strabwary ,grappes ) and Yogurt with high nutritional value",
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 2,
+      "Categuary": "BreakFast",
+      "img": "./image_api/2.jpeg",
+      "title": "beans",
+      "type":"BreakFast",
+      "important":"Beans contains a number of vitamins that strengthen the body and provide it with  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "price": 20,
+      "Gradions": "This Meal froms A plate of beans and two pieces of toast",
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 3,
+      "Categuary": "BreakFast",
+      "type":"BreakFast",
+      "important":"Butter contains a number of vitamins that strengthen the body and provide it with  ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/3.jpeg",
+      "title": "Butter",
+      "price": 25,
+      "Gradions": " This Meal froms A dish of peanuts that contain high-quality peanut butter and a piece of toast on the side",
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 4,
+      "Categuary": "BreakFast",
+      "type":"BreakFast",
+      "important":"cheese contains a number of vitamins that strengthen the body and provide it with ",
+      "nm":4,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/4.webp",
+      "title": "cheese",
+      "price": 25,
+      "Gradions": " This Meal froms A plate containing two pieces of feta cheese and a piece of toast",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 5,
+      "Categuary": "BreakFast",
+      "type":"BreakFast",
+      "important":"Pancake Egg contains a number of vitamins that strengthen the body  ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/5.webp",
+      "title": "Egg cake ",
+      "price": 65,
+      "Gradions": "This Meal froms It contains two eggs with pieces of mushrooms, thyme, cardamom, pieces of arugula and a piece ",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 6,
+      "Categuary": "BreakFast",
+      "type":"BreakFast",
+      "important":"Pancake flafl contains a number of vitamins that strengthen the body and provide it with ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/21.jpeg",
+      "title": "flafl cake ",
+      "price": 45,
+      "Gradions": "This Meal froms 3 tablets of taamia with some pieces of arugula, tomatoes and cucumbersAnd a piece of toast ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 7,
+      "Categuary": "BreakFast",
+      "type":"BreakFast",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/21.jpg",
+      "title": " flafl",
+      "price": 25,
+      "Gradions": "This Meal froms  3 tablets of taamia with some pieces of arugula, tomatoes and cucumbers And a piece of toast",
+      "important":"flafl  contains a number of vitamins that strengthen the body and provide it with",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 8,
+      "Categuary": "BreakFast",
+      "img": "./image_api/22.jpeg",
+      "title": "potatoes ",
+      "price": 55,
+      "Gradions": "This Meal froms 5 slices of potatoes, pieces of carrots, cucumbers and a piece of toast ",
+      "type":"BreakFast",
+      "important":"potatoes  contains a number of vitamins that strengthen the body and provide it with  ",
+      "nm":4.5,
+      "sold":"10 sold in last 2 hours" ,
+
+      "stars": {
+        "rating": 4.25,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 9,
+      "Categuary": "BreakFast",
+      "img": "./image_api/Romy.jpg",
+      "title": " Chesse ",
+      "price": 30,
+      "Gradions": "This Meal froms 5 slices of potatoes, pieces of carrots, cucumbers and a piece of toast ",
+      "type":"BreakFast",
+      "important":"Romy Chesse  contains a number of vitamins that strengthen the body  ",
+      "nm":4.5,
+      "sold":"10 sold in last 2 hours" ,
+
+      "stars": {
+        "rating": 4.25,
+        "reviews": 20
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": 10,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/6.webp",
+      "title": "Chicken",
+      "price": 300,
+      "Gradions": "This Meal froms A breast of fresh white chicken, some pieces of potatoes, a plate of salad and a plate of tahini and pieces of fresh bread",
+      "important":"Chicken  contains a number of vitamins that strengthen the body and provide it with energy",
+      "nm":5,
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 11,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Koffta  contains a number of vitamins that strengthen the body and provide it with energy",
+      "nm":4.5,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/7.jpeg",
+      "title": "Koffta",
+      "price": 300,
+      "Gradions": "This Meal froms A quarter kilo of kofta with a plate of spaghetti pasta and a plate of sesame paste and a plate of salad and pieces of fresh bread",
+
+      "stars": {
+        "rating": 4.5,
+        "reviews": 22
+      }
+    },
+    {
+      "id": 12,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Meat  contains a number of vitamins that strengthen the body and provide it with energy ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/8.jpeg",
+      "title": "Meat",
+      "price": 250,
+      "Gradions": "This Meal froms A quarter kilo of Meat with a plate of spaghetti pasta and a plate of sesame paste and a plate of salad and pieces of fresh bread",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 13,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Salmon  contains a number of vitamins that strengthen the body and provide it with energy ",
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/9.jpg",
+      "title": "Salmon",
+      "price": 200,
+      "Gradions": "This Meal froms 3 pieces of salmon containing pieces of fresh vegetables and a plate of Sayadiya rice And pieces of toast",
+      "nm":4,
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 14,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Gambry  contains a number of vitamins that strengthen the body and provide it with energy ",
+      "nm":3,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/10.jpg",
+      "title": "Gambry",
+      "price": 500,
+      "Gradions": "This Meal froms A quarter kilo of shrimpContains pieces of fresh vegetables and a plate of Sayadia rice And pieces of toast",
+
+      "stars": {
+        "rating": 3,
+        "reviews": 15
+      }
+    },
+    {
+      "id": 15,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Margrita Pizza  contains a number of vitamins that strengthen the body  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/23.jpeg",
+      "title": "Margrita ",
+      "price": 200,
+      "Gradions": "This Meal froms 6 pieces of pizza filled with vegetables, mozzarella cheese, cheddar, tomato, thyme and cardamom",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 16,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Salmon Pizza  contains a number of vitamins that strengthen the body and provide it with energy   ",
+      "nm":3,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/24.jpeg",
+      "title": "Salmon ",
+      "price": 200,
+      "Gradions": "This Meal froms Salimon pizza filled with pieces of salmon fish and many vegetables such as tomatoes, cucumbers, thyme, watercress and some types of fresh cheese",
+
+      "stars": {
+        "rating": 3,
+        "reviews": 15
+      }
+    },
+    {
+      "id": 17,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"White sos  contains a number of vitamins that strengthen the body and provide it with energy ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/25.jpeg",
+      "title": "White sos",
+      "price": 150,
+      "Gradions": "This Meal froms Pasta of white sauce that contains many minced meat and some fresh vegetables such as zucchini, beans and carrots",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 18,
+      "Categuary": "Lunch",
+      "type":"Lunch",
+      "important":"Slices   contains a number of vitamins that strengthen the body and provide it with energy ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/che.jpg",
+      "title": "Slices",
+      "price":200,
+      "Gradions": "This Meal froms Pasta of white sauce that contains many minced meat and some fresh vegetables such as zucchini, beans and carrots",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    }
+  ],
+  "Dinner": [
+    {
+      "id": 19,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/15.webp",
+      "title": "Salad",
+      "price": 65,
+      "Gradions": "This Meal froms Salad dish filled with pieces of cheese, which contains tomatoes, cucumbers, green peppers, red, yellow and parsley",
+      "important":"Salad  contains a number of vitamins that strengthen the body and provide it with ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 20,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"Various grains  contains a number of vitamins that strengthen the body ",
+      "nm":4.5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/12.jpeg",
+      "title": "Various ",
+      "price": 50,
+      "Gradions": " This Meal froms Salad dish filled with pieces of cheese, which contains tomatoes, cucumbers, green peppers, red, yellow ",
+
+      "stars": {
+        "rating": 4.5,
+        "reviews": 22
+      }
+    },
+    {
+      "id":21,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"Yogurt of Tout grains  contains a number of vitamins that strengthen the body ",
+      "nm":4,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/13.webp",
+      "title": "YogurtTout",
+      "price": 60,
+      "Gradions": "This Meal froms diffrent of fruits(apple , strabwary ,grappes ) and Yogurt with high nutritional value",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id":22,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"healthy Cake grains  contains a number of vitamins that strengthen the body ",
+      "nm":4,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/14.webp",
+      "title": " Cake",
+      "price": 70,
+      "Gradions": " This Meal froms 3 pieces of healthy cake that does not contain sugar, vegetable oils or vegetable fats",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 23,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"Vegetables grains  contains a number of vitamins that strengthen the body  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/26.jpeg",
+      "title": "Vegetables",
+      "price": 80,
+      "Gradions": " This Meal froms A plate of fresh vegetables from zucchini, beans, carrots, tomatoes, cucumbers and pieces of fresh Albanian chicken",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id":24,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"variable Egg grains  contains a number of vitamins that strengthen the body  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/27.jpeg",
+      "title": "variable ",
+      "price": 60,
+      "Gradions": " This Meal froms A plate of fresh twi picecs of Egg vegetables from zucchini, beans, carrots, tomatoes, cucumbers and pieces of fresh Albanian chicken",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 25,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"lentil grains  contains a number of vitamins that strengthen the body and provide it with  ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/28.jpeg",
+      "title": "lentil",
+      "price": 30,
+      "Gradions": "This Meal froms A dish of yellow lentil soup with high nutritional value containing many minerals for the body and with a plate of green salad, which contains tomatoes, cucumbers, onions, jarir and parsley",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id": 26,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"cheese salad grains  contains a number of vitamins that strengthen the body",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/29.jpeg",
+      "title": "cheese ",
+      "price": 55,
+      "Gradions": "This Meal froms  Salad dish filled with pieces of cheese, which contains tomatoes, cucumbers, green peppers, red, yellow and parsley",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 27,
+      "Categuary": "Dinner",
+      "type":"Dinner",
+      "important":"Lanshon grains  contains a number of vitamins that strengthen the body  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/lanshon.jpg",
+      "title": " Lanshon",
+      "price": 60,
+      "Gradions": "This Meal froms  Salad dish filled with pieces of cheese, which contains tomatoes, cucumbers, green peppers, red, yellow and parsley",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    }
+  ],
+  "Fruits": [
+    {
+      "id": 28,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"Apple  grains  contains a number of vitamins that strengthen the body and provide it with  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/17.jpeg",
+      "title": "Apple",
+      "price": 75,
+      "Gradions": "This Meal froms 3 pieces of apples with more cinnamon kernels ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 29,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"banans grains  contains a number of vitamins that strengthen the body ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/18.jpg",
+      "title": "banans",
+      "price": 40,
+      "Gradions": " This Meal froms 3 pieces of banans with more cinnamon kernels ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 30,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/19.jpeg",
+      "title": "Grapes",
+      "price": 40,
+      "Gradions": " This Meal froms 3 pieces of banans with more cinnamon kernels",
+      "important":"Grapes grains  contains a number of vitamins that strengthen the body ",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id":31,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"WaterMelon grains  contains a number of vitamins that strengthen the body ",
+      "nm":4.5,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/20.jpeg",
+      "title": "WaterMelon",
+      "price": 50,
+      "Gradions": "This Meal froms Slices of watermelon topped with some sprinkles of cinnamon as desired",
+
+      "stars": {
+        "rating": 4.5,
+        "reviews": 22
+      }
+    },
+    {
+      "id": 32,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"Orange grains  contains a number of vitamins that strengthen the body  ",
+      "nm":5,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/28.webp",
+      "title": "Orange",
+      "price": 30,
+      "Gradions": "This Meal froms 3 pieces of oranges with more cinnamon kernels",
+
+      "stars": {
+        "rating": 5,
+        "reviews": 25
+      }
+    },
+    {
+      "id":33,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"Roman grains  contains a number of vitamins that strengthen the body ",
+      "nm":4,
+      "sold":"12 sold in last 2 hours" ,
+
+      "img": "./image_api/30.jpeg",
+      "title": "Roman",
+      "price": 30,
+      "Gradions": "This Meal froms 3 pieces of Roman with more cinnamon kernels",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 34,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "important":"Strabuary grains  contains a number of vitamins that strengthen the body  ",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/32.webp",
+      "title": "Strabuary",
+      "price": 30,
+      "Gradions": "This Meal froms 3 pieces of Strabuary with more cinnamon kernels",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 35,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/31.jpeg",
+      "title": "Yosfy",
+      "price": 50,
+      "Gradions": "This Meal froms 3 pieces of Yosfy  with more cinnamon kernels",
+      "important":"Yosfy grains  contains a number of vitamins that strengthen the body  ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    },
+    {
+      "id": 36,
+      "Categuary": "Fruits",
+      "type":"Fruits",
+      "nm":4,
+      "sold":"10 sold in last 2 hours" ,
+
+      "img": "./image_api/quwy.jpg",
+      "title": "quwy",
+      "price": 50,
+      "Gradions": "This Meal froms 3 pieces of quwy.jpg  with more cinnamon kernels",
+      "important":"quwy.jpg grains  contains a number of vitamins that strengthen the body  ",
+
+      "stars": {
+        "rating": 4,
+        "reviews": 20
+      }
+    }
+  ]
+}

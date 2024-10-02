@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+.App{
+
+.swal-custom-style {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.swal-custom-background {
+  background: #9b1c0e!important;
+}
+
+.swal-custom-padding {
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .swal-custom-style {
+    font-size: 16px; /* تغيير حجم الخط لتناسب الشاشات الصغيرة */
+  }
+}
+ 
+}

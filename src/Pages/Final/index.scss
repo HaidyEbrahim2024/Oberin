@@ -1,0 +1,36 @@
+.Final {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    .checkpage {
+        // width: 50%;
+        // height: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // إضافة بوكس شادو
+
+    }
+    .image{
+
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h5{
+            color: black;
+        }
+        p{
+            color: black;
+            text-align: center;
+        }
+    }
+
+}

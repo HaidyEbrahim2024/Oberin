@@ -1,0 +1,47 @@
+/* تنسيق عنصر input */
+input.form-control  {
+    border: 1px solid #ced4da; /* إطار بسيط */
+    border-radius: 0.25rem; /* زوايا مدورة */
+    padding: 0.375rem 0.75rem; /* حشو داخلي */
+    font-size: 1rem; /* حجم الخط */
+    line-height: 1.5; /* ارتفاع السطر */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* انتقال سلس للتأثيرات */
+  
+    /* إزالة الشادو */
+    box-shadow: none;
+  
+    &:focus {
+      border-color:#13653f; /* لون الإطار عند التركيز */
+      outline: 0; /* إزالة الإطار الخارجي عند التركيز */
+      box-shadow: none; /* إزالة الشادو عند التركيز */
+    }
+  }
+  
+  /* تنسيق العنصر input داخل مجموعة الإدخال */
+  .input-group {
+    display: flex;
+    align-items: center;
+  
+    .form-control {
+      flex: 1; /* استيلاء العنصر على العرض الكامل */
+    }
+  
+    .btn-outline-secondary {
+      border: 1px solid #ced4da; /* إطار بسيط للأزرار */
+      border-radius: 0; /* إزالة الزوايا المدورة */
+      box-shadow: none; /* إزالة الشادو */
+      transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  
+      &:hover,
+      &:focus {
+        background-color: #e9ecef; /* لون الخلفية عند التمرير فوق */
+        color: #495057; /* لون النص عند التمرير فوق */
+      }
+    }
+  }
+  
+  /* تحسين التباعد */
+  .ee {
+    gap: 0.5rem; /* تباعد بين عناصر المجموعة */
+  }
+  

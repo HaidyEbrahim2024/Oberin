@@ -1,0 +1,93 @@
+.Bestquality {
+  //   margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  //***************************************************************************
+  .img {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      width: 100% !important;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100% !important;
+    }
+  }
+
+  //***************************************************************************
+
+  .text {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      width: 100% !important;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100% !important;
+
+    }
+  }
+  //***************************************************************************
+
+  .icon {
+    color: #e98c81;
+    font-size: 25px;
+  }
+  .link_orders{
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #1b1b1c;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    height: 45px;
+    letter-spacing: 0.025em;
+    line-height: 41px;
+    padding: 9px 30px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: 0.9s;
+  }
+  .link_orders:hover {
+    background-color: #e98c81;
+    color: white;
+    border: none;
+  }
+  @media screen and (max-width: 767px) {
+    .link_orders {
+      padding: 0 8px;
+      font-size: 10px;
+      border-radius: 10px;
+      line-height: 20px;
+      height: 25px;
+    }
+   
+  }
+ .link_orders{
+    text-decoration: none;
+  }
+ 
+}
+.swiper-button-next, .swiper-button-prev {
+  --swiper-navigation-size: 15px; 
+}

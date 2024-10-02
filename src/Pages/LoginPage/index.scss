@@ -1,0 +1,95 @@
+.LoginPage {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center !important;
+  background-color: rgb(251, 253, 253);
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .img {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    
+    .image {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 100%;
+
+      }
+
+    }
+  }
+}
+
+#Loginpage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  min-height: 100vh;
+  .father {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding: 1rem 3rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // إضافة بوكس شادو
+border:1px solid #198754;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    .father .text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #198754;
+    //   background-color: antiquewhite;
+    margin: 6px 0;
+    border-radius: px;
+    padding: 4px 10px;
+  }
+  // input:focus {
+  //   transform: scale(1.1);
+  // }
+  input:valid {
+    // color: #198754;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  // #msg-pas {
+  //   background-color: white;
+  //   color: red;
+  //   border: 3px solid rgb(245, 242, 242);
+  //   border-radius: 5px;
+  //   padding: 4px;
+  //   font-weight: 600;
+  //   box-shadow: 0 2px 15px rgb(0 0 0);
+  // }
+}

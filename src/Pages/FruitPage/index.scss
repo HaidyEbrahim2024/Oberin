@@ -1,0 +1,128 @@
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Apply the rotation animation to elements with the rotate-animation class
+.rotate-animation {
+  animation: rotate360 10s linear infinite;
+}
+
+.layout{
+  display: flex;
+  gap: 20px;
+  
+  @media screen and (max-width: 767px) {
+display: flex;
+flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {}
+
+}
+
+
+  .search-section{
+    position: relative;
+    
+  }
+  .sort-section{
+.se{
+  background-color: #e8f0fe;
+  outline: none;
+  border: 1px solid transparent;
+  padding-right: 32px;
+}
+
+  .se:focus{
+    border-color: #198754; /* color when focused */
+  
+  }
+  }
+  .search-icon{
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    color:#198754;
+  }
+  input{
+    background-color: #e8f0fe;
+    outline: none;
+    border: 1px solid transparent;
+   }
+   input:focus {
+    border-color: #198754; /* color when focused */
+    outline: none; /* removes default outline */
+  }
+ 
+
+
+.mealfruit {
+  min-height: 70vh;
+  background-color:#e5ddcb;
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+
+  .image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  img {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      // display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+
+
+    }
+
+  }
+
+  .text2 {
+    line-height: 0.6;
+    padding-top: 20px;
+  }
+  p{
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+
+
+
+
+    }
+
+  }
+
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    // font-weight: 500;
+    color: #1b1b1c;
+    font-size: 50px;
+    margin-bottom: 0 !important;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {}
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+
+
+
+
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+    color: #1b1b1c;
+    margin-right: 10px;
+    margin-bottom: 0!important;
+  }}

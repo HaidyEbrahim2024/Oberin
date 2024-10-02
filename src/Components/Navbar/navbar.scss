@@ -1,0 +1,215 @@
+.Navbar {
+  width: 100% !important;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+  background-color: rgb(251, 253, 253);
+  margin: 0 !important;
+
+  .mobile-menu-icon {
+    display: none; /* This is handled in media queries */
+  }
+
+  .image {
+    background-position: right !important;
+    padding-left: 44px;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .home,
+  .about,
+  .serv,
+  .cat,
+  .link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .link {
+    position: relative;
+  }
+
+  .icon-button {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 60px;
+  }
+
+  .bascet {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right:-14px;
+    background-color: #dee2e6;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-button .icon {
+    color: #13653f;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    // .icon-button{
+    //   display: none;
+    // }
+    .fabar {
+      display: block; /* Ensure the menu icon is displayed on mobile */
+    }
+
+    .nav_links {
+      display: none; /* Hide links initially on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Adjust positioning to avoid overlap with navbar */
+      left: 10%;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .nav_links.active {
+      display: flex; /* Show links when menu is active */
+    }
+
+    .mobile-menu-icon {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .image {
+      padding: 0;
+      width: 100px; /* Ensure consistent width */
+    }
+
+    .image img {
+      width: 100px; /* Ensure image width is consistent */
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    .fabar {
+      background-position: left;
+    }
+
+    .bascet {
+      display: none;
+      color: black;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      position: relative;
+      top: -14px;
+      right: 15%;
+      background-color: #dee2e6;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dropdown-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position dropdown menu below the icon */
+      right: 0; /* Align with the right edge of the menu icon */
+      z-index: 1001;
+      background-color: rgb(206, 31, 31);
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      width: 200px;
+    }
+
+    // .dropdown-menu ul {
+    //   list-style-type: none;
+    //   margin: 0;
+    //   padding: 0;
+    // }
+
+    .dropdown-menu li {
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-menu a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .link {
+      font-size: 20px;
+    }
+
+    .login {
+      padding: 3px 7px;
+    }
+    .icon {
+      display: none;
+    }
+    .bascet {
+      display: none;
+      width: 22%;
+      height: 22%;
+      background-color: aliceblue;
+    }
+    .login {
+      display: none;
+    }
+  
+    .pp{
+      position: absolute !important;
+    top: 48% !important;
+    right: 45% !important;
+    background-color: dee2e6 !important;
+    width: 2% !important;
+    height: 2% !important;
+}
+.btn{
+  display: none;
+}
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fabar {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+}

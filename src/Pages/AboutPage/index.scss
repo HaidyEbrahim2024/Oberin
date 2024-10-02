@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+.AboutPage{
+  margin-bottom: 2rem ;
+  margin-top: 2rem ;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0 ;
+
+  }
+.container{
+  @media screen and (max-width: 768px) {
+    // background-color: #e98c81;
+    display: flex;
+    flex-direction: column;
+  }
+  .text{
+
+    @media screen and (max-width: 768px) {
+      
+    width: 100%;
+  }}
+  p{
+    margin-bottom: 13px;
+  }
+    }
+  
+  
+  }
+  
+.image_gif{
+  .img{
+    // z-index: 111111111;
+    @media screen and (max-width: 768px) {
+          width: 100%;
+          padding: 10px;
+
+    }
+    
+  }
+}
+
+
+
+.contact_us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efedee;
+  height: 30vh;
+  h3 {
+    color: #1b1b1c;
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+  }
+  .link{
+    text-decoration: none;
+    border: 2px solid #e98c81;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    height: 45px;
+    letter-spacing: 0.025em;
+    line-height: 41px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    background-color:  #e98c81;
+    color: black;
+    border-radius: 30px;
+    transition: all 0.9s  ease;
+  }
+  .link:hover{
+    background-color:  #b3b2b2;
+    border-color: #b3b2b2;
+    line-height: 41px;
+   transform: scale(0.9);
+
+  }
+ 
+  
+}
+

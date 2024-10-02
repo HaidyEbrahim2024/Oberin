@@ -1,0 +1,323 @@
+.Popular-cat {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.SwiperSlide img {
+  width: 200px;
+}
+
+/* SHIREFF */
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(237, 108, 2);
+}
+
+.sw-conn {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 100%;
+  position: relative;
+  overflow: hidden
+
+}
+ .lunch h2{
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 6%;
+  z-index: 11111111;
+  margin-bottom: 0;
+
+}
+ .lunch h6{
+  position: absolute;
+  color: white;
+  bottom: 14%;
+  right: 14.5%!important;
+  z-index: 11111111;
+
+}
+ .din h2{
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 6%;
+  z-index: 11111111;
+  margin-bottom: 0;
+
+}
+ .din h6{
+  position: absolute;
+  color: white;
+  bottom: 14%;
+  right: 17%;
+  z-index: 11111111;
+
+}
+ .fruit h2{
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 6%;
+  z-index: 11111111;
+  margin-bottom: 0;
+
+}
+ .fruit h6{
+  position: absolute;
+  color: white;
+  bottom: 14%;
+  right: 13%;
+  z-index: 11111111;
+
+}
+ .break h2{
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 6%;
+  z-index: 11111111;
+  margin-bottom: 0;
+
+
+}
+ .break h6{
+  position: absolute;
+  color: white;
+  bottom:14%;
+  right: 28%;
+  z-index: 11111111;
+
+}
+ .lunch h2{
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 6%;
+  z-index: 11111111;
+  margin-bottom: 0;
+
+
+}
+ .lunch h6{
+  position: absolute;
+  color: white;
+  bottom:14%;
+  right: 28%;
+  z-index: 11111111;
+
+}
+.swiper-slide .image {
+  display: block;
+  width: 100%!important;
+  height: 100%!important;
+  object-fit: cover;
+  border-radius: 15px!important;
+  
+}
+ .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2rem !important; /* إذا كنت ترغب في منحها نفس حدود الصورة */
+
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  pointer-events: none; /* لمنع التداخل مع تفاعلات المستخدم */
+
+  /* تدرج من الأبيض إلى الشفاف */
+}
+
+.cus-son {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.sub-cus-son {
+  /* margin-top: 10px; */
+}
+
+.sw-con img {
+  opacity: 1;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  height: 100%;
+  margin: auto;
+  width: 60%;
+}
+
+.sub-cus-son .food-namee {
+  color: rgb(55 65 81 / 1);
+  /* font-weight: 400; */
+  font-size: 20px;
+  /* line-height: 1.75rem; */
+  margin: 0;
+  text-decoration: none;
+}
+.button{
+  text-decoration: none;
+  border: 1px solid ;
+  color: #e98c81;
+  padding: 5px 5px;
+}
+.links_meal{
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .lunch h2{
+   
+    right: 13%;
+    font-size: 23px;
+    margin-bottom: 8px;
+
+  
+  }
+  .lunch h6{
+   
+    right: 19%;
+    font-size: 14px;
+
+  
+  }
+  .break h2{
+    right: 13%;
+    font-size: 23px;
+    margin-bottom: 8px;
+
+
+   
+  }
+  .break h6{
+    
+    right: 35%;
+    font-size: 14px;
+
+
+   
+  }
+  .din h2{
+    right: 13%;
+    font-size: 23px;
+    margin-bottom: 8px;
+
+  }
+  .din h6{
+   
+    right: 23%;
+    font-size: 14px;
+
+
+  }
+  
+   .fruit h2{
+    right: 13%;
+    font-size: 23px;
+    margin-bottom: 8px;
+
+  
+  }
+   .fruit h6{
+   
+    right: 17.5%;
+    font-size: 14px;
+
+  
+  }
+
+  .Popular-cat {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+.Link  .button{
+    padding: 5px 5px!important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+ 
+  .swiper-slide {
+    display: block;
+  }
+  .lunch h2{
+   
+    right: 11%;
+  
+  }
+  .break h2{
+    right: 12%;
+
+   
+  }
+  .din h2{
+    right: 11%;
+
+  }
+   .fruit h2{
+    right: 11%;
+
+  
+  }
+
+  .Popular-cat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+.Link  .button{
+    padding: 5px 5px!important;
+  }
+  .sw-conn{
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 0; 
+    
+  }
+
+
+  }
+
+
+
+
