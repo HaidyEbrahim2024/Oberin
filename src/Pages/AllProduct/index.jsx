@@ -8,7 +8,7 @@ import { FaSearch } from "react-icons/fa"; // Make sure to import the search ico
 import "./index.scss";
 import pro from "./pro.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function AllProduct({ handelCount }) {
   const [data, setData] = useState([]);
@@ -48,7 +48,7 @@ export default function AllProduct({ handelCount }) {
 
   return (
     <>
- <div className="AllProduct">
+ {/* <div className="AllProduct">
   <div className="img">
     <img src={pro} alt="" />
 
@@ -62,13 +62,12 @@ export default function AllProduct({ handelCount }) {
           <FontAwesomeIcon icon={faChevronLeft} />Categry
         </Link>
   </div>
-      </div>
-
-
-
+      </div> */}
+<div className="Allproducts">
 
 
       <div className="container">
+        <h3>All Products</h3>
         <div className="layout">
           <div className="col-md-3">
             <div className="d-flex flex-column gap-3" style={{position:"sticky"}}>
@@ -87,8 +86,8 @@ export default function AllProduct({ handelCount }) {
                 </div>
               </div>
               <div className="mb-3">
-                <label htmlFor="priceRange" className="form-label">Search by price range:</label>
-                <div className="d-flex align-items-center mb-3">
+                <label htmlFor="priceRange" className="form-label">Search by price Manual:</label>
+                <div className="d-flex align-items-center">
                   <div className="input-group me-2">
                     <span className="input-group-text">Min</span>
                     <input
@@ -120,7 +119,13 @@ export default function AllProduct({ handelCount }) {
             </div>
           </div>
 
-          <div className="cards-section col-md-9">
+          <div className="cards-sectionn col-md-9 ">
+          <div className="Back d-flex align-items-center gap-3">
+              <Link to="/CatAll" className="link">
+              <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+              Back
+              </Link>
+              </div>
             {["breakfast", "lunch", "Dinner", "Fruits"].map(category => (
               <div key={category}>
                 <div className="row">
@@ -146,6 +151,7 @@ export default function AllProduct({ handelCount }) {
             ))}
           </div>
         </div>
+      </div>
       </div>
       <Services />
     </>
