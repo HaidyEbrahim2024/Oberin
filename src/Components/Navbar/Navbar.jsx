@@ -54,7 +54,7 @@ export default function Navbar({ bascet }) {
 
   return (
     <>
-    <div className="">
+    <div className="container ">
       <div className="  Navbar">
         <div className="image">
           <img src={logo} />
