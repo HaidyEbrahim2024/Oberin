@@ -90,14 +90,14 @@ export default function Navbar({ bascet }) {
         <div className="icon-button">
           <Link to="/shopping" className="link">
             <FontAwesomeIcon className="icon" icon={faCartShopping} />
-          <span className=" bascet p-1">{bascet}</span>
+            <span className=" bascet p-1">{bascet}</span>
           </Link>
           {loggedIn ? (
-              <div className="d-flex gap-3 align-items-center m-0">
-                {/* <p>{username}</p> */}
-               <span className="btn btn-success" onClick={handleLogout}>
-               (Logout)
-            </span></div>
+            <div className="d-flex gap-3 align-items-center m-0">
+              {/* <p>{username}</p> */}
+              <span className="btn btn-success" onClick={handleLogout}>
+                (Logout)
+              </span></div>
           ) : (
             <Link className="btn btn-success login" to="/login">
               Log In
@@ -119,14 +119,14 @@ export default function Navbar({ bascet }) {
 
             zIndex: "1001",
             width: "100%",
-            height: "200px",
+            height: "auto",
             backgroundColor: "white",
             top: "55px",
             right: "0",
             display: "block",
           }}
         >
-          <ul className="d-flex flex-column justify-content-center align-items-center p-1 gap-2">
+          <ul className="d-flex flex-column justify-content-center align-items-center p-1 gap-3">
             <li>
               <Link
                 to="/"
@@ -145,19 +145,27 @@ export default function Navbar({ bascet }) {
             </li>
             <li>
               <Link
-                to="/Categories"
+                to="/CatAll"
                 style={{ textDecoration: "none", color: "black" }}
               >
-                Shop
+                Categery
               </Link>
             </li>
             <li>
-              <div className="d-flex flex-column justify-content-center align-items-center d ">
+              <Link
+                to="/allpro"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                shop         
+               </Link>
+            </li>
+            <li>
+              <div className=" menu d-flex flex-column justify-content-center align-items-center d " style={{}}>
                 <div className="d-flex ">
                   <Link to="/shopping" className="link">
                     <FontAwesomeIcon
                       className="icon"
-                      style={{ color: "#13653f", paddingBottom:"10px" }}
+                      style={{ color: "#13653f", paddingBottom: "10px" }}
                       icon={faCartShopping}
                     />
                   </Link>
@@ -165,9 +173,9 @@ export default function Navbar({ bascet }) {
                     className=" pp "
                     style={{
                       position: "absolute",
-                      top: "48%",
+                      top: "60%",
                       right: "45%",
-                     
+
                     }}
                   >
                     {bascet}
@@ -176,7 +184,7 @@ export default function Navbar({ bascet }) {
 
                 {loggedIn ? (
                   <span className=" btn btn btn-success" onClick={handleLogout}>
-                     (Logout)
+                    (Logout)
                   </span>
                 ) : (
                   <Link className="btn btn-success" to="/login">
