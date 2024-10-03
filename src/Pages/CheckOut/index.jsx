@@ -55,6 +55,9 @@ export default function CheckOut() {
       toast.success("Order sent successfully!", {
         position: "top-right",
       });
+      // تفريغ السلة
+      setCartItems([]);
+      localStorage.setItem("cards", JSON.stringify([]));
 
       // الانتظار لمدة 3 ثوانٍ (3000 مللي ثانية) قبل الانتقال
       setTimeout(() => {

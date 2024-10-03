@@ -23,6 +23,16 @@
       border-radius: 8px; /* لجعل الزوايا مدورة */
       padding: 30px; /* إضافة مساحة داخلية */
       transition: box-shadow 0.3s; /* لتأثير التغيير عند التمرير */
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        display: flex;
+        flex-direction: row;
+      }
+
+
     }
     
     .summary {
@@ -118,11 +128,12 @@
     }
     @media screen and (max-width: 767px) {
       .link_orders {
-        padding: 0 8px;
-        font-size: 10px;
-        border-radius: 10px;
-        line-height: 20px;
-        height: 25px;
+        padding: 16px 20px;
+        font-size: 15px;
+        border-radius: 20px;
+        line-height:0.1;
+        height: 30px;
+    }
       }
     }
     .link_orders {
@@ -132,4 +143,4 @@
       cursor: pointer;
     }
   }
-}
+
