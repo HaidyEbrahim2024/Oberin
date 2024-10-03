@@ -92,8 +92,17 @@
 // }
 .Allproducts{
     background-color:rgb(248 255 251);
+    // background-color: #f2f1f1;
     h3{
         margin:20px 0 30px 0;
     }
+  
+
+
+}
+  .place{
+        position: sticky;
+        top: 0; 
+        z-index: 1000; 
    
 }

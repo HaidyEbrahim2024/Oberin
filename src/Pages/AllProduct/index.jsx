@@ -70,8 +70,8 @@ export default function AllProduct({ handelCount }) {
         <h3>All Products</h3>
         <div className="layout">
           <div className="col-md-3">
-            <div className="d-flex flex-column gap-3" style={{position:"sticky"}}>
-              <div className="mb-3">
+            <div className=" place d-flex flex-column gap-3" >
+              <div className="mb-2">
                 <label htmlFor="searchByName" className="form-label">Search by name:</label>
                 <div className="input-group relative">
                   <input
@@ -85,7 +85,7 @@ export default function AllProduct({ handelCount }) {
                   <FaSearch className="search-icon" style={{ top: "12px", right: "10px", zIndex: "10" }} />
                 </div>
               </div>
-              <div className="mb-3">
+              <div className="mb-2">
                 <label htmlFor="priceRange" className="form-label">Search by price Manual:</label>
                 <div className="d-flex align-items-center">
                   <div className="input-group me-2">
@@ -109,7 +109,7 @@ export default function AllProduct({ handelCount }) {
                   </div>
                 </div>
               </div>
-              <div className="mb-3">
+              <div className="mb-2">
                 <label htmlFor="sortOrder" className="form-label">Sort by:</label>
                 <select className="form-select" id="sortOrder" value={sortOrder} onChange={handleSortChange}>
                   <option value="lowToHigh">Price: Low to High</option>

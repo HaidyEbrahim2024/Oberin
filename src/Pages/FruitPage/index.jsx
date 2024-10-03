@@ -86,7 +86,7 @@ export default function LunchPage({ handelCount, increment }) {
       <div className="container">
         <div className="layout">
           <div className="col-md-3">
-            <div className="d-flex flex-column gap-3">
+            <div className="place d-flex flex-column gap-3">
               <div className="mb-3">
                 <label htmlFor="searchByName" className="form-label">Search by name:</label>
                 <div className="input-group relative">

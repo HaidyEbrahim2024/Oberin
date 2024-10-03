@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+.Categry{
+    background-color: rgb(248 255 251);
+    h3{
+        margin:20px 0 0 0; 
+    }
+ 
+}
+
 .CatAll {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    min-height: 60vh;
+    min-height:40vh;
     @media screen and (max-width: 767px) {
         flex-direction: column!important;
         margin-bottom: 35px;
@@ -16,7 +24,7 @@
         margin-bottom: 35px;
 
     }
-    
+   
 
     .FirstMeal {
         display: flex;

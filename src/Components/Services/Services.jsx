@@ -9,6 +9,9 @@ import p from "/image/img/bestQuality.png";
 export default function Bestquality() {
   return (
     <>
+    <div className="serives">
+
+   
       <div className="container Bestquality col-12  d-flex" id="services">
         <div className="col-6  text">
           <h1>Why We’re Best Quality Healthy Food</h1>
@@ -44,6 +47,7 @@ export default function Bestquality() {
         <div className=" img col-6 ">
           <img src={p} className=" col-10" />
         </div>
+      </div>
       </div>
     </>
   );
