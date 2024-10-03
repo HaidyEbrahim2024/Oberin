@@ -3,6 +3,9 @@ import freshFood from "./freshFood.webp"
 export default function Freshfood() {
   return (
     <>
+    <div className="parent_Freshfood">
+
+
       <div className="container col-12 Freshfood ">
         <div className="col-6 important_healthyfood">
           <h2>Important to eat Healthy Food</h2>
@@ -26,6 +29,8 @@ export default function Freshfood() {
             <img  src={freshFood} className="col-12 p-3"/>
         </div>
       </div>
+      </div>
+
     </>
   );
 }

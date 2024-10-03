@@ -8,7 +8,7 @@
 
 .Herosection .text {
   position: absolute;
-  left: 8%;
+  left: 7.9%;
   top: 0;
   bottom: 7%;
   z-index: 2;
@@ -16,6 +16,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  @media screen and (max-width: 767px) {
+    bottom: 5%;
+
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+left: 14%;
+top: 20%;
+
+  }
+  
+
+
 }
 
 .Herosection .text h3 {
@@ -26,14 +38,19 @@
   font-size: 36px;
   margin-bottom: 20px;
   line-height: 43px;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    margin-bottom: 0!important;
+  }
+  
 }
-
 @media screen and (max-width: 767px) {
   .Herosection .text h3 {
     margin-top: 25%;
     margin-bottom: 0;
     font-size: 20px;
+    line-height: 0.4;
   }
+
 }
 
 .Herosection .text h1 {
@@ -48,6 +65,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .Herosection .text h1 {
     font-size: 45px;
+    margin-bottom: 25px;
   }
 }
 

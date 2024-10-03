@@ -54,6 +54,7 @@ export default function Navbar({ bascet }) {
 
   return (
     <>
+    <div className="">
       <div className="  Navbar">
         <div className="image">
           <img src={logo} />
@@ -109,6 +110,7 @@ export default function Navbar({ bascet }) {
             onClick={toggleMenu}
           />
         </div>
+      </div>
       </div>
 
       {isMenuOpen && (
