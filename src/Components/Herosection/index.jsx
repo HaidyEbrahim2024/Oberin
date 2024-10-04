@@ -13,7 +13,8 @@ export default function Herosection() {
           <Link className="link_orders" to="/allpro">
             Shop Now
           </Link>
-        </div>
+
+          </div>
       </div>
     </>
   );

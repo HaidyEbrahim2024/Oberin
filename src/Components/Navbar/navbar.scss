@@ -74,18 +74,16 @@
   }
 
   @media screen and (max-width: 768px) {
-    // .icon-button{
-    //   display: none;
-    // }
+   
     .fabar {
-      display: block; /* Ensure the menu icon is displayed on mobile */
+      display: block; 
     }
 
     .nav_links {
-      display: none; /* Hide links initially on mobile */
+      display: none; 
       flex-direction: column;
       position: absolute;
-      top: 70px; /* Adjust positioning to avoid overlap with navbar */
+      top: 70px;
       left: 10%;
       width: 100%;
       background-color: white;
@@ -94,7 +92,7 @@
     }
 
     .nav_links.active {
-      display: flex; /* Show links when menu is active */
+      display: flex; 
     }
 
     .mobile-menu-icon {
@@ -106,13 +104,13 @@
 
     .image {
       padding: 0;
-      width: 100px; /* Ensure consistent width */
+      width: 100px; 
     }
 
     .image img {
-      width: 100px; /* Ensure image width is consistent */
+      width: 100px; 
       vertical-align: middle;
-      margin-left: 5px;
+      // margin-left: 5px;
     }
 
     .fabar {

@@ -4,28 +4,28 @@
   justify-content: center;
   align-items: center !important;
   background-color: rgb(251, 253, 253);
+  min-height: 100vh;
+
   @media screen and (max-width: 767px) {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .img {
     @media screen and (max-width: 767px) {
       width: 100%;
+      display: none !important;
     }
-    
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      display: none !important;
+    }
+
     .image {
       @media screen and (max-width: 767px) {
         width: 100%;
       }
       @media screen and (min-width: 768px) and (max-width: 992px) {
         width: 100%;
-
       }
-
     }
   }
 }
@@ -36,9 +36,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
   margin: auto;
-  min-height: 100vh;
+
   .father {
     width: 400px;
     display: flex;
@@ -46,17 +45,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    align-content: center;
     padding: 1rem 3rem;
     position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // إضافة بوكس شادو
-border:1px solid #198754;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #198754;
 
     @media screen and (max-width: 767px) {
       width: 100%;
+      padding: 1rem 3rem;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      padding: 1rem 1rem;
     }
 
-    .father .text {
+    .text {
       width: 100%;
       text-align: center;
     }
@@ -67,29 +69,41 @@ border:1px solid #198754;
     height: 40px;
     outline: none;
     border: 1px solid #198754;
-    //   background-color: antiquewhite;
+    background-color: white !important; // Background white
     margin: 6px 0;
-    border-radius: px;
+    border-radius: 5px;
     padding: 4px 10px;
+    padding-left: 10px; // Add space for the icon
   }
-  // input:focus {
-  //   transform: scale(1.1);
-  // }
-  input:valid {
-    // color: #198754;
+
+  .email-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .email-icon {
+    position: absolute;
+    right: 10px; // Adjust the position of the icon
+    top: 50%;
+    transform: translateY(-50%);
+    color: #198754; // Icon color
   }
 
   label {
     font-weight: 600;
   }
 
-  // #msg-pas {
-  //   background-color: white;
-  //   color: red;
-  //   border: 3px solid rgb(245, 242, 242);
-  //   border-radius: 5px;
-  //   padding: 4px;
-  //   font-weight: 600;
-  //   box-shadow: 0 2px 15px rgb(0 0 0);
-  // }
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 10px; // Adjust as necessary
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #198754; // Match your theme
+  }
 }

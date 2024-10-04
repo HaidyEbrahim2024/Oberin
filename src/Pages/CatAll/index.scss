@@ -3,9 +3,16 @@
     background-color: rgb(248 255 251);
     h3{
         margin:20px 0 0 0; 
+        @media screen and (max-width: 767px){
+           margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            margin-bottom: 20px;
+
+        }}
     }
  
-}
+
 
 .CatAll {
     display: flex;
@@ -24,6 +31,7 @@
         margin-bottom: 35px;
 
     }
+    
    
 
     .FirstMeal {

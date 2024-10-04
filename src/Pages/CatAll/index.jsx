@@ -16,9 +16,8 @@ export default function CatAll() {
     <>
       <Heromain />
       <div className='Categry'>
-
       <div className="container">
-      <h3 >All Categories</h3>
+      <h3 className =" text-start"  >All Categories</h3>
         <div className="CatAll">
           <div className="FirstMeal  animate__animated animate__fadeInLeftBig">
             <Link to="/breakfast" className="food_one">
