@@ -39,11 +39,19 @@
   //***************************************************************************
 
   .text {
+  
     @media screen and (min-width: 768px) and (max-width: 992px) {
       width: 100% !important;
     }
     @media screen and (max-width: 767px) {
         width: 100% !important;
+
+    }
+    h1{
+      @media screen and (max-width: 767px) {
+        padding-top: 30px;
+      }
+
 
     }
   }
