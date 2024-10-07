@@ -122,15 +122,21 @@ export default function ProductsComp({
           </div>
 
           <p className="card-text py-0">{h5}</p>
-          <div className="d-flex">
+          <div className="d-flex   justify-content-between">
+            <div>
             {stars && renderStars(stars.rating)}
+            </div>
+            <h6>
+            {/* Price :<span> {p} EGP</span> */}
+            <span> {p} EGP</span>
+          </h6>
           </div>
         </div>
         <div className="col-12 d-flex justify-content-between align-items-center py-2">
-          <h6>
+          {/* <h6>
             Price :<span> {p} EGP</span>
-          </h6>
-          <button className="btn btn-outline-secondary" 
+          </h6> */}
+          <button className="btn btn-outline-secondary col-12" 
           
           style={{ minWidth: '120px' }} // تعيين عرض الحد الأدنى للزر
           onClick={handleAddToCart}>
