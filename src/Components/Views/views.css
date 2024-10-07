@@ -8,7 +8,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +37,7 @@
 }
 
 .sw-con {
+  background-color: #f2f1f1;
   border-radius: 0.5rem;
   display: flex;
   justify-content: flex-start;
@@ -56,7 +56,6 @@
 }
 .sub-cus-con {
   width: 100%;
-  /* margin-top: 10px; */
 }
 
 .sw-con img {
@@ -109,7 +108,6 @@
   }
   .sub-cus-con {
     width: 100% !important;
-    /* background-color: aqua; */
     line-height: 0;
   }
   .loren {
@@ -161,7 +159,6 @@
   }
   .sub-cus-con {
     width: 100% !important;
-    /* background-color: aqua; */
     line-height: 0;
   }
   .loren {
@@ -214,13 +211,11 @@
   }
   .sub-cus-con {
     width: 100% !important;
-    /* background-color: aqua; */
     line-height: 0;
   }
   .loren {
     width: 100% !important;
     text-align: left;
-    /* margin-bottom: 10px; */
     padding-left: 10px;
     font-size: medium;
   }
@@ -264,6 +259,7 @@
 
 .swiper-pagination-bullet-active {
   background-color: #198754;
+  /* background-color: #e98c81; */
 }
 .swiper-pagination{
   position: absolute;

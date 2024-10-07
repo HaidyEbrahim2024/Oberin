@@ -23,11 +23,9 @@ export default function App() {
       <div className="container  ">
         <div className=" Popular-cat">
           <h3>What People Say</h3>
-          {/* <button className="button">See All</button> */}
         </div>
         <Swiper
-          // effect="coverflow"
-          // onSwiper={setSwiperRef}
+       
           slidesPerView={1}
           centeredSlides={true}
           autoplay={{
@@ -37,7 +35,6 @@ export default function App() {
           spaceBetween={30}
           loop={true}
           pagination={{
-            // type: "fraction",
             clickable: true,
           }}
           navigation={false}
@@ -47,12 +44,12 @@ export default function App() {
             768: {
               slidesPerView: 3,
             },
-            // وهكذا...
           }}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="sw-con bg-light p-2">
+            {/* <div className="sw-con bg-light p-2"> */}
+            <div className="sw-con  p-2">
               <div className="cus-con d-flex flex-colmun justify-content-start align-items-start ">
                 <img src={cust1} />
                 <div className="sub-cus-con d-flex flex-column col-12">
@@ -79,7 +76,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="sw-con  bg-light  p-2">
+            <div className="sw-con   p-2">
               <div className="cus-con  d-flex flex-colmun justify-content-start align-items-start ">
                 <img src={cust2} />
                 <div className="sub-cus-con col-12 d-flex flex-column ">
@@ -107,7 +104,7 @@ export default function App() {
           </SwiperSlide>
          
           <SwiperSlide>
-            <div className="sw-con  bg-light  p-2">
+            <div className="sw-con   p-2">
               <div className="cus-con d-flex flex-colmun justify-content-start align-items-start ">
                 <img src={cust4} />
                 <div className="sub-cus-con d-flex flex-column col-12">
@@ -134,7 +131,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="sw-con  bg-light  p-2">
+            <div className="sw-con   p-2">
               <div className="cus-con d-flex flex-colmun justify-content-start align-items-start ">
                 <img src={cust5} />
                 <div className="sub-cus-con d-flex flex-column col-12">
@@ -161,7 +158,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="sw-con  bg-light  p-2">
+            <div className="sw-con   p-2">
               <div className="cus-con d-flex flex-colmun justify-content-start align-items-start ">
                 <img src={cust7} />
                 <div className="sub-cus-con d-flex flex-column col-12">

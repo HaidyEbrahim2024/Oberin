@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Y from "./y.webp";
 import { Link } from "react-router-dom";
-// import {p} from "/image/img/bestQuality.png"
 export default function Bestquality() {
   return (
     <>

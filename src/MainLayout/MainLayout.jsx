@@ -1,8 +1,3 @@
-
-
-
-// export default AnyPage;
-// استيراد الحزم الضرورية
 import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
