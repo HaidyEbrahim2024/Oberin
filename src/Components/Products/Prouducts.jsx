@@ -20,7 +20,7 @@ export default function Prouducts({ handelCount }) {
         setLunch(res.data.lunch);
         setDinner(res.data.Dinner);
         setFruit(res.data.Fruits);
-      } catch (err) {}
+      } catch (err) { }
     };
     productitems();
   }, []);
@@ -40,7 +40,7 @@ export default function Prouducts({ handelCount }) {
         <NavLink
           className="Nav_link"
           style={
-            currentPage === "breakfast" ? { backgroundColor: " #e98c81", color:"white"  } : {}
+            currentPage === "breakfast" ? { backgroundColor: " #e98c81", color: "white" } : {}
           }
           onClick={() => handleNavLinkClick("breakfast")}
         >
@@ -48,7 +48,7 @@ export default function Prouducts({ handelCount }) {
         </NavLink>
         <NavLink
           className=" Nav_link"
-          style={currentPage === "lunch" ? { backgroundColor: " #e98c81" ,color:"white" } : {}}
+          style={currentPage === "lunch" ? { backgroundColor: " #e98c81", color: "white" } : {}}
           onClick={() => setCurrentPage("lunch")}
         >
           Lunch
@@ -56,7 +56,7 @@ export default function Prouducts({ handelCount }) {
         <NavLink
           className=" Nav_link"
           style={
-            currentPage === "dinner" ? { backgroundColor: " #e98c81" , color:"white"} : {}
+            currentPage === "dinner" ? { backgroundColor: " #e98c81", color: "white" } : {}
           }
           onClick={() => setCurrentPage("dinner")}
         >
@@ -64,7 +64,7 @@ export default function Prouducts({ handelCount }) {
         </NavLink>
         <NavLink
           className=" Nav_link"
-          style={currentPage === "fruit" ? { backgroundColor: " #e98c81" ,color:"white" } : {}}
+          style={currentPage === "fruit" ? { backgroundColor: " #e98c81", color: "white" } : {}}
           onClick={() => setCurrentPage("fruit")}
         >
           Fruits
@@ -76,19 +76,19 @@ export default function Prouducts({ handelCount }) {
           <div className="row">
             {breakfast.map((product, index) => (
               <ProductsComp
-                key={index}
+                key={index} // this is complatelly wrong
                 handelCount={() => handelCount(product)}
                 img={product.img}
                 h1={product.title}
-              h6={product.type}
-              h5={product.important}
+                h6={product.type}
+                h5={product.important}
                 p={product.price}
-                stars={product.stars} 
+                stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
                 nm={product.nm}
                 sold={product.sold}
-
+                productsId={product.id}
               />
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function Prouducts({ handelCount }) {
 
                 h1={product.title}
                 p={product.price}
-                stars={product.stars} 
+                stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
 
@@ -134,7 +134,7 @@ export default function Prouducts({ handelCount }) {
                 sold={product.sold}
 
                 p={product.price}
-                stars={product.stars} 
+                stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
 
@@ -157,7 +157,7 @@ export default function Prouducts({ handelCount }) {
                 h5={product.important}
                 nm={product.nm}
                 p={product.price}
-                stars={product.stars} 
+                stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
                 sold={product.sold}

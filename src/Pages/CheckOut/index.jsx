@@ -8,7 +8,7 @@ import visa from './visa.png';
 import mastercard from './Mastercard.png';
 import other from './other.png';
 
-export default function CheckOut() {
+export default function CheckOut({ setBascet }) {
   const [cartitems, setCartItems] = useState([]);
   const [totalItems, setTotalItems] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -56,7 +56,8 @@ export default function CheckOut() {
         position: "top-right",
       });
       // تفريغ السلة
-      setCartItems([]);
+      setBascet([]);
+      // setCartItems([]);
       localStorage.setItem("cards", JSON.stringify([]));
 
       // الانتظار لمدة 3 ثوانٍ (3000 مللي ثانية) قبل الانتقال

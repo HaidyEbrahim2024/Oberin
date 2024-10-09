@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faEye, faStarHalf, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,7 +16,7 @@ export default function ProductsComp({
   Gradions,
   Categuary,
   sold,
-  n,
+  productsId,
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -62,9 +62,26 @@ export default function ProductsComp({
     setShowModal(false);
   };
 
+  useEffect(() => {
+    const cartItem = JSON.parse(localStorage.getItem("cartItem") )|| {}
+    setIsAdded(!!cartItem[productsId])
+  }, [])
+
   const handleAddToCart = () => {
     setIsAdded(true); // Set product as added
     handelCount(); // Call the existing add to cart handler
+    console.log("Product id is =>", productsId)
+    const cartItem = JSON.parse(localStorage.getItem("cartItem") ) || {}
+    if(!isAdded) {
+      cartItem[productsId] = true
+      setIsAdded(true)
+      handelCount()
+    } else {
+      delete cartItem[productsId]
+      setIsAdded(false)
+    }
+
+    localStorage.setItem("cartItems", JSON.stringify(cartItem))
   };
 
   return (
@@ -124,22 +141,22 @@ export default function ProductsComp({
           <p className="card-text py-0">{h5}</p>
           <div className="d-flex   justify-content-between">
             <div>
-            {stars && renderStars(stars.rating)}
+              {stars && renderStars(stars.rating)}
             </div>
             <h6>
-            {/* Price :<span> {p} EGP</span> */}
-            <span> {p} EGP</span>
-          </h6>
+              {/* Price :<span> {p} EGP</span> */}
+              <span> {p} EGP</span>
+            </h6>
           </div>
         </div>
         <div className="col-12 d-flex justify-content-between align-items-center py-2">
           {/* <h6>
             Price :<span> {p} EGP</span>
           </h6> */}
-          <button className="btn btn-outline-secondary col-12" 
-          
-          style={{ minWidth: '120px' }} // تعيين عرض الحد الأدنى للزر
-          onClick={handleAddToCart}>
+          <button className="btn btn-outline-secondary col-12"
+
+            style={{ minWidth: '120px' }} // تعيين عرض الحد الأدنى للزر
+            onClick={handleAddToCart}>
             {isAdded ? "Added" : "Add to Cart"} {/* Change button text based on state */}
           </button>
         </div>

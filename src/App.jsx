@@ -95,7 +95,7 @@ export default function App({increment}) {
                 />
               }
             />
-            <Route path="CheckOut" element={<CheckOut />} />
+            <Route path="CheckOut" element={<CheckOut  setBascet={setBascet}/>} />
 
             <Route path="register" element={<Register />} />
           </Route>
