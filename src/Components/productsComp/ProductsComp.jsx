@@ -17,7 +17,6 @@ export default function ProductsComp({
   Categuary,
   sold,
   productsId,
- 
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -63,14 +62,10 @@ export default function ProductsComp({
     setShowModal(false);
   };
 
-  // useEffect(() => {
-  //   const cartItem = JSON.parse(localStorage.getItem("cartItem") )|| {}
-  //   setIsAdded(!!cartItem[productsId])
-  // }, [])
   useEffect(() => {
-    const cartItem = JSON.parse(localStorage.getItem("cartItem")) || {};
-    setIsAdded(!!cartItem[productsId]);
-}, [productsId]); // تأكد من أن هذا التأثير يعتمد على productsId
+    const cartItem = JSON.parse(localStorage.getItem("cartItem") )|| {}
+    setIsAdded(!!cartItem[productsId])
+  }, [])
 
 
   const handleAddToCart = () => {

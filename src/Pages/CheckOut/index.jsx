@@ -84,8 +84,8 @@ export default function CheckOut({ setBascet }) {
   return (
     <div className="container">
       <h1 className="text-center my-5">Check OUT</h1>
-      <div className="row justify-content-between">
-        <div className="col-md-6 products-table">
+      <div className="row  Checkout justify-content-between ">
+        <div className=" col-md-6 products-table">
           <h5 className="text-success mb-3">Products chosen to be purchased through the site:</h5>
           <table className="table table-bordered">
             <thead className="thead-dark">
