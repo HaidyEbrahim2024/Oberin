@@ -57,8 +57,9 @@ export default function CheckOut({ setBascet }) {
       });
       // تفريغ السلة
       setBascet([]);
-      // setCartItems([]);
       localStorage.setItem("cards", JSON.stringify([]));
+       // إعادة تعيين حالة الإضافة في السلة
+       resetCartItems();
 
       // الانتظار لمدة 3 ثوانٍ (3000 مللي ثانية) قبل الانتقال
       setTimeout(() => {
@@ -72,6 +73,13 @@ export default function CheckOut({ setBascet }) {
       form.reportValidity(); // عرض رسائل التحقق من الصحة
     }
   };
+  const resetCartItems = () => {
+    const cartItems = JSON.parse(localStorage.getItem("cartItem")) || {};
+    Object.keys(cartItems).forEach(itemId => {
+        delete cartItems[itemId];
+    });
+    localStorage.setItem("cartItem", JSON.stringify(cartItems));
+};
 
   return (
     <div className="container">

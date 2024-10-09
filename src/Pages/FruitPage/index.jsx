@@ -27,7 +27,7 @@ export default function LunchPage({ handelCount, increment }) {
   }, []);
 
   const sortItems = (order) => {
-    const sortedItems = [...FruitItem].sort((a, b) => 
+    const sortedItems = [...FruitItem].sort((a, b) =>
       order === 'lowToHigh' ? a.price - b.price : b.price - a.price
     );
     setFruitItem(sortedItems);
@@ -63,26 +63,26 @@ export default function LunchPage({ handelCount, increment }) {
 
   return (
     <>
-     <div className="mealfruit">
+      <div className="mealfruit">
         <div className="image col-12">
           <img src={y} alt="" className="rotate-animation img col-3" />
 
           <div className="text">
-          <h3>Healthy  </h3>
-          <h1> Fruits ideas </h1>
+            <h3>Healthy  </h3>
+            <h1> Fruits ideas </h1>
 
-          <div  className="text2 ">
-          <p>Stuk in the morning ? Find over 100 healthy.</p>
-          <p> fruit ideas on our Website! suger free,</p>
-          <p> gluten free , and nutritious.</p>
+            <div className="text2 ">
+              <p>Stuk in the morning ? Find over 100 healthy.</p>
+              <p> fruit ideas on our Website! suger free,</p>
+              <p> gluten free , and nutritious.</p>
 
-          </div>
+            </div>
           </div>
         </div>
       </div>
 
 
-    
+
       <div className="container">
         <div className="layout">
           <div className="col-md-3">
@@ -135,12 +135,12 @@ export default function LunchPage({ handelCount, increment }) {
             </div>
           </div>
           <div className="cards-section col-md-9">
-              <div className="Back d-flex align-items-center gap-3">
+            <div className="Back d-flex align-items-center gap-3">
               <Link to="/CatAll" className="link">
-              <FontAwesomeIcon icon={faArrowLeft} className="icon" />
-              Back
+                <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+                Back
               </Link>
-              </div>
+            </div>
             <div className="row ">
               {filteredItems.length > 0 ? (
                 filteredItems.map((product, index) => (
@@ -152,12 +152,14 @@ export default function LunchPage({ handelCount, increment }) {
                     h6={product.type}
                     h5={product.important}
                     nm={product.nm}
-                    stars={product.stars} 
+                    stars={product.stars}
                     Categuary={product.Categuary}
                     Gradions={product.Gradions}
                     handelCount={() => handelCount(product)}
                     increment={() => increment(product)}
                     sold={product.sold}
+                    productsId={product.id}
+
                   />
                 ))
               ) : (

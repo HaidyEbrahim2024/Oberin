@@ -166,6 +166,8 @@ export default function BreakfastPage({ handelCount, increment }) {
                   h5={product.important}
                   nm={product.nm}
                   sold={product.sold}
+                  productsId={product.id}
+
                 />
               ))}
             </div>

@@ -17,6 +17,7 @@ export default function ProductsComp({
   Categuary,
   sold,
   productsId,
+ 
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -62,28 +63,30 @@ export default function ProductsComp({
     setShowModal(false);
   };
 
+  // useEffect(() => {
+  //   const cartItem = JSON.parse(localStorage.getItem("cartItem") )|| {}
+  //   setIsAdded(!!cartItem[productsId])
+  // }, [])
   useEffect(() => {
-    const cartItem = JSON.parse(localStorage.getItem("cartItem") )|| {}
-    setIsAdded(!!cartItem[productsId])
-  }, [])
+    const cartItem = JSON.parse(localStorage.getItem("cartItem")) || {};
+    setIsAdded(!!cartItem[productsId]);
+}, [productsId]); // تأكد من أن هذا التأثير يعتمد على productsId
+
 
   const handleAddToCart = () => {
-    setIsAdded(true); // Set product as added
-    handelCount(); // Call the existing add to cart handler
-    console.log("Product id is =>", productsId)
-    const cartItem = JSON.parse(localStorage.getItem("cartItem") ) || {}
-    if(!isAdded) {
-      cartItem[productsId] = true
-      setIsAdded(true)
-      handelCount()
+    const cartItems = JSON.parse(localStorage.getItem("cartItem")) || {};
+  
+    if (!isAdded) {
+      cartItems[productsId] = true; // أضف المنتج إلى السلة
+      setIsAdded(true); // تحديث الحالة
+      handelCount(); // استدعاء دالة العد
     } else {
-      delete cartItem[productsId]
-      setIsAdded(false)
+      delete cartItems[productsId]; // احذف المنتج من السلة
+      setIsAdded(false); // تحديث الحالة
     }
-
-    localStorage.setItem("cartItems", JSON.stringify(cartItem))
+  
+    localStorage.setItem("cartItem", JSON.stringify(cartItems)); // حفظ الحالة الجديدة
   };
-
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 mb-4 position-relative">
       <div className="card">

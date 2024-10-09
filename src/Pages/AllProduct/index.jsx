@@ -142,6 +142,7 @@ export default function AllProduct({ handelCount }) {
                       Categuary={product.Categuary}
                       Gradions={product.Gradions}
                       sold={product.sold}
+                      productsId={product.id}
                       handelCount={() => handelCount(product)}
                       className="m-3"
                     />

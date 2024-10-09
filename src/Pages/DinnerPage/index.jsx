@@ -194,6 +194,8 @@ export default function DinnerPage({ handelCount, increment }) {
                     handelCount={() => handelCount(product)}
                     increment={() => increment(product)}
                     sold={product.sold}
+                    productsId={product.id}
+
                   />
                 ))
               ) : (

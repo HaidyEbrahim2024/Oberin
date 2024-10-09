@@ -106,12 +106,13 @@ export default function Prouducts({ handelCount }) {
                 h5={product.important}
                 nm={product.nm}
                 sold={product.sold}
-
                 h1={product.title}
                 p={product.price}
                 stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
+                productsId={product.id}
+
 
 
               />
@@ -132,11 +133,12 @@ export default function Prouducts({ handelCount }) {
                 h5={product.important}
                 nm={product.nm}
                 sold={product.sold}
-
                 p={product.price}
                 stars={product.stars}
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
+                productsId={product.id}
+
 
 
               />
@@ -161,6 +163,8 @@ export default function Prouducts({ handelCount }) {
                 Categuary={product.Categuary}
                 Gradions={product.Gradions}
                 sold={product.sold}
+                productsId={product.id}
+
 
 
               />
