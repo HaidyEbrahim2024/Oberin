@@ -3,17 +3,18 @@ import "./index.scss";
 import login from "./login.gif";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { FaEye, FaEyeSlash, FaEnvelope } from 'react-icons/fa'; // استيراد أيقونة البريد الإلكتروني
+import { FaEye, FaEyeSlash, FaEnvelope } from 'react-icons/fa';
 
 export default function LoginPage() {
-  const emailRef = useRef(); // استخدام useRef للإشارة إلى حقل البريد الإلكتروني
-  const passwordRef = useRef(); // استخدام useRef للإشارة إلى حقل كلمة المرور
-  const rememberIndexRef = useRef(); // استخدام useRef للإشارة إلى خانة "تذكرني"
-  const navigate = useNavigate(); // استخدام useNavigate للتنقل بين الصفحات
-  const [formErrors, setFormErrors] = useState({ email: '', password: '' }); // لحفظ الأخطاء في النموذج
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false); // حالة لإظهار/إخفاء كلمة المرور
-
-  // دالة لتغيير كلمة المرور والتحقق من طولها
+  const emailRef = useRef(); 
+  const passwordRef = useRef(); 
+  const rememberIndexRef = useRef(); 
+  const navigate = useNavigate(); 
+  //ُErrorsmessage
+  const [formErrors, setFormErrors] = useState({ email: '', password: '' });
+  // Status to show/hide the password
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false); 
+// A function to change the password and check its length
   const handleChangePassword = (event) => {
     const passVal = event.target.value;
     if (passVal.length >= 6) {
@@ -23,7 +24,7 @@ export default function LoginPage() {
     }
   };
 
-  // دالة لتغيير البريد الإلكتروني والتحقق من وجود قيمة
+  // A function to change the email and check if a value exists
   const handleChangeEmail = (event) => {
     const emailVal = event.target.value;
     if (emailVal === "") {
@@ -32,14 +33,13 @@ export default function LoginPage() {
       setFormErrors((prev) => ({ ...prev, email: '' }));
     }
   };
-
-  // دالة لإرسال النموذج والتحقق من صحة البيانات
+  //هبدا اتحقق من صحة البيانات  المرسلة فى النموذج
   const handleSubmit = async (event) => {
-    event.preventDefault(); // منع إعادة تحميل الصفحة عند الإرسال
+    event.preventDefault(); 
     const emailVal = emailRef.current.value;
     const passVal = passwordRef.current.value;
 
-    let isValid = true; // متغير للتحقق من صلاحية النموذج
+    let isValid = true; 
 
     if (emailVal === "") {
       setFormErrors((prev) => ({ ...prev, email: 'Please enter your email.' }));
@@ -74,8 +74,7 @@ export default function LoginPage() {
       passwordRef.current.value = "";
     }
   };
-
-  // دالة للتحقق من بيانات المستخدم
+// Function to verify user data
   const checkUserCredentials = async (email, password) => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -83,12 +82,11 @@ export default function LoginPage() {
         const userExists = storedUsers.some(
           (user) => user.email === email && user.password === password
         );
-        resolve(userExists); // إرجاع ما إذا كان المستخدم موجودًا
+        resolve(userExists);
       }, 1000);
     });
   };
-
-  // دالة لتبديل رؤية كلمة المرور
+// Function to toggle password visibility
   const togglePasswordVisibility = () => {
     setIsPasswordVisible((prev) => !prev);
   };

@@ -107,7 +107,7 @@ export default function DinnerPage({ handelCount, increment }) {
                 </div>
               </div>
               <div className="mb-3">
-                <label htmlFor="priceRange" className="form-label">Search by price range:</label>
+                <label htmlFor="priceRange" className="form-label">Search by price  Manual:</label>
                 <div className="d-flex align-items-center mb-3">
                   <div className="input-group me-2">
                     <span className="input-group-text">Min</span>
@@ -139,37 +139,7 @@ export default function DinnerPage({ handelCount, increment }) {
               </div>
             </div>
           </div>
-          {/* <div className="cards-section">
-          <div className="Back d-flex align-items-center gap-3">
-              <Link to="/CatAll" className="link">
-              <FontAwesomeIcon icon={faArrowLeft} className="icon" />
-              Back
-              </Link>
-              </div>
-            <div className="row">
-              {filteredItems.length > 0 ? (
-                filteredItems.map((product, index) => (
-                  <ProductsComp
-                    key={index}
-                    handelCount={() => handelCount(product)}
-                    increment={() => increment(product)}
-                    img={product.img}
-                    h6={product.type}
-                    h5={product.important}
-                    h1={product.title}
-                    p={product.price}
-                    stars={product.stars}
-                    Categuary={product.Categuary}
-                    Gradions={product.Gradions}
-                    nm={product.nm}
-                    sold={product.sold}
-                  />
-                ))
-              ) : (
-                <p>No items found</p>
-              )}
-            </div>
-          </div> */}
+         
            <div className="cards-section col-md-9">
               <div className="Back d-flex align-items-center gap-3">
               <Link to="/CatAll" className="link">

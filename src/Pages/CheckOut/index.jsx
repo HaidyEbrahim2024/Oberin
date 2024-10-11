@@ -18,7 +18,7 @@ export default function CheckOut({ setBascet }) {
   const [address, setAddress] = useState("");
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
 
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cards")) || [];

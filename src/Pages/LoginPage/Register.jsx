@@ -10,7 +10,7 @@ export default function Register() {
   const password = useRef();
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const navigate = useNavigate();
-  const [formErrors, setFormErrors] = useState({}); // Initialize formErrors
+  const [formErrors, setFormErrors] = useState({}); 
 
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(prev => !prev);

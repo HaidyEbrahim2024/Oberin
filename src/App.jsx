@@ -36,6 +36,7 @@ export default function App({increment}) {
       card.count = 1;
       cards.push(card);
     }
+    //bascet update
     setBascet(cards);
     localStorage.setItem("cards", JSON.stringify(cards));
     toast.success("Item added to basket right.", {
@@ -49,6 +50,7 @@ export default function App({increment}) {
   };
 
   const handleDeleteItem = () => {
+    //New matrix
     const updatedBascet = bascet.filter((item) => item.name !== card.name);
     setBascet(updatedBascet);
     localStorage.setItem("cards", JSON.stringify(updatedBascet));

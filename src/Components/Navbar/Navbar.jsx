@@ -21,7 +21,6 @@ export default function Navbar({ bascet }) {
 
   const navigate = useNavigate();
   useEffect(() => {
-    // التحقق مما إذا كان المستخدم قد قام بتسجيل الدخول
     const loggedInUserEmail = localStorage.getItem("loggedInUserEmail");
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const loggedInUser = users.find((user) => user.email === loggedInUserEmail);
@@ -42,8 +41,7 @@ export default function Navbar({ bascet }) {
     toast.success("You have been logged out.");
     position: "top-center", (emailRef.current.value = "");
     passwordRef.current.value = "";
-
-    navigate("/"); // Redirect to homepage or any other desired route after logout
+    navigate("/"); 
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

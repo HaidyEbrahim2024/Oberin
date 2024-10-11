@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faEye, faStarHalf, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProductsComp({
-  increment,
   img,
   h1,
   p,
@@ -20,18 +19,12 @@ export default function ProductsComp({
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [isAdded, setIsAdded] = useState(false); // State to track if the product is added to cart
+  const [isAdded, setIsAdded] = useState(false); 
 
-  const handleIncrement = () => {
-    // handle increment logic (not fully shown in your snippet)
-  };
-
-  const handleDecrement = () => {
-    // handle decrement logic (not fully shown in your snippet)
-  };
 
   const renderStars = (rating, reviews) => {
     const starsArray = [];
+   // The function has to be rounded to the nearest integer (Math.floor)
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating - fullStars !== 0;
 
@@ -72,15 +65,21 @@ export default function ProductsComp({
     const cartItems = JSON.parse(localStorage.getItem("cartItem")) || {};
   
     if (!isAdded) {
-      cartItems[productsId] = true; // أضف المنتج إلى السلة
-      setIsAdded(true); // تحديث الحالة
-      handelCount(); // استدعاء دالة العد
+      //Add the product to the cart
+      cartItems[productsId] = true; 
+      // Update status
+      setIsAdded(true); 
+      handelCount(); 
     } else {
-      delete cartItems[productsId]; // احذف المنتج من السلة
-      setIsAdded(false); // تحديث الحالة
+      // Remove the product from the cart
+      delete cartItems[productsId]; 
+      // Update status
+      setIsAdded(false); 
+      localStorage.removeItem("cartItems");
+
     }
-  
-    localStorage.setItem("cartItem", JSON.stringify(cartItems)); // حفظ الحالة الجديدة
+  // Save the new state
+    localStorage.setItem("cartItem", JSON.stringify(cartItems)); 
   };
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 mb-4 position-relative">
@@ -93,7 +92,7 @@ export default function ProductsComp({
           onClick={openModal}
           style={{ cursor: "pointer" }}
         />
-        {isHovered && (
+        {/* {isHovered && (
           <div
             style={{
               position: "absolute",
@@ -107,7 +106,7 @@ export default function ProductsComp({
           >
             <FontAwesomeIcon onClick={openModal} icon={faEye} />
           </div>
-        )}
+        )} */}
 
         <div className="card-body p-0">
           <div className="col-12 d-flex justify-content-between align-items-center">
@@ -148,14 +147,12 @@ export default function ProductsComp({
           </div>
         </div>
         <div className="col-12 d-flex justify-content-between align-items-center py-2">
-          {/* <h6>
-            Price :<span> {p} EGP</span>
-          </h6> */}
+         
           <button className="btn btn-outline-secondary col-12"
 
-            style={{ minWidth: '120px' }} // تعيين عرض الحد الأدنى للزر
             onClick={handleAddToCart}>
-            {isAdded ? "Added" : "Add to Cart"} {/* Change button text based on state */}
+              {/* //Change button text based on state // */}
+            {isAdded ? "Added" : "Add to Cart"}  
           </button>
         </div>
       </div>

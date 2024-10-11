@@ -6,7 +6,6 @@ import axios from "axios";
 
 export default function Prouducts({ handelCount }) {
   const [currentPage, setCurrentPage] = useState("");
-  const [clicked, setClicked] = useState(false);
   const [breakfast, setBreakfast] = useState([]);
   const [lunch, setLunch] = useState([]);
   const [dinner, setDinner] = useState([]);
@@ -24,13 +23,8 @@ export default function Prouducts({ handelCount }) {
     };
     productitems();
   }, []);
-  const handleNavLinkClick = (el) => {
-    setCurrentPage(el);
-    setClicked(true);
-  };
   return (
     <div className="Prouducts">
-      {/* //text */}
       <div className=" text col-12 d-flex justify-content-center">
         <h2 className="text-center mt-5 mb-3 col-4 ">
           Enjoy Our Healthy And Fresh Food Items
@@ -42,7 +36,8 @@ export default function Prouducts({ handelCount }) {
           style={
             currentPage === "breakfast" ? { backgroundColor: " #e98c81", color: "white" } : {}
           }
-          onClick={() => handleNavLinkClick("breakfast")}
+          onClick={() => setCurrentPage("breakfast")}
+
         >
           Breakfast
         </NavLink>
@@ -76,7 +71,7 @@ export default function Prouducts({ handelCount }) {
           <div className="row">
             {breakfast.map((product, index) => (
               <ProductsComp
-                key={index} // this is complatelly wrong
+                key={index} 
                 handelCount={() => handelCount(product)}
                 img={product.img}
                 h1={product.title}

@@ -103,7 +103,7 @@ export default function LunchPage({ handelCount, increment }) {
                 </div>
               </div>
               <div className="mb-3">
-                <label htmlFor="priceRange" className="form-label">Search by price range:</label>
+                <label htmlFor="priceRange" className="form-label">Search by price  Manual:</label>
                 <div className="d-flex align-items-center mb-3">
                   <div className="input-group me-2">
                     <span className="input-group-text">Min</span>
