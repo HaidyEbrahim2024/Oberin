@@ -53,7 +53,6 @@ export default function ShoppingCard({
     handleDeleteAllItems();
   };
 
-  // Calculate total items and total price
   const totalItems = cartitems.reduce((total, item) => total + item.count, 0);
   const totalPrice = cartitems.reduce(
     (total, item) => total + item.price * item.count,

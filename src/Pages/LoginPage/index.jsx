@@ -10,11 +10,8 @@ export default function LoginPage() {
   const passwordRef = useRef(); 
   const rememberIndexRef = useRef(); 
   const navigate = useNavigate(); 
-  //ُErrorsmessage
   const [formErrors, setFormErrors] = useState({ email: '', password: '' });
-  // Status to show/hide the password
   const [isPasswordVisible, setIsPasswordVisible] = useState(false); 
-// A function to change the password and check its length
   const handleChangePassword = (event) => {
     const passVal = event.target.value;
     if (passVal.length >= 6) {
@@ -24,7 +21,6 @@ export default function LoginPage() {
     }
   };
 
-  // A function to change the email and check if a value exists
   const handleChangeEmail = (event) => {
     const emailVal = event.target.value;
     if (emailVal === "") {
@@ -33,7 +29,6 @@ export default function LoginPage() {
       setFormErrors((prev) => ({ ...prev, email: '' }));
     }
   };
-  //هبدا اتحقق من صحة البيانات  المرسلة فى النموذج
   const handleSubmit = async (event) => {
     event.preventDefault(); 
     const emailVal = emailRef.current.value;
@@ -74,7 +69,6 @@ export default function LoginPage() {
       passwordRef.current.value = "";
     }
   };
-// Function to verify user data
   const checkUserCredentials = async (email, password) => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -86,7 +80,6 @@ export default function LoginPage() {
       }, 1000);
     });
   };
-// Function to toggle password visibility
   const togglePasswordVisibility = () => {
     setIsPasswordVisible((prev) => !prev);
   };

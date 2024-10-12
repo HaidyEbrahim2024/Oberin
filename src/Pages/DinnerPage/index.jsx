@@ -3,16 +3,16 @@ import "./index.scss";
 import ProductsComp from "../../Components/productsComp/ProductsComp";
 import axios from "axios";
 import DINNER from "./DINNER.png";
-import { FaSearch } from 'react-icons/fa'; // Import search icon from react-icons
+import { FaSearch } from 'react-icons/fa'; 
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 export default function DinnerPage({ handelCount, increment }) {
   const [DinnerItem, setDinnerItem] = useState([]);
-  const [searchQuery, setSearchQuery] = useState(''); // State to manage search query by name
-  const [minPrice, setMinPrice] = useState(''); // State to manage minimum price
-  const [maxPrice, setMaxPrice] = useState(''); // State to manage maximum price
-  const [sortOrder, setSortOrder] = useState('lowToHigh'); // State to manage sort order
+  const [searchQuery, setSearchQuery] = useState(''); 
+  const [minPrice, setMinPrice] = useState(''); 
+  const [maxPrice, setMaxPrice] = useState(''); 
+  const [sortOrder, setSortOrder] = useState('lowToHigh'); 
 
   useEffect(() => {
     const fetchDinnerItems = async () => {
@@ -58,7 +58,7 @@ export default function DinnerPage({ handelCount, increment }) {
     setMaxPrice(event.target.value);
   };
 
-  // Filter items based on search query and price range
+  // Filter items based on search query and price manual
   const filteredItems = DinnerItem.filter(item => {
     const matchesName = item.title.toLowerCase().includes(searchQuery);
     const matchesPrice = (

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProductsComp from "../../Components/productsComp/ProductsComp";
 import ProductSearch from "../../Components/ProductSearch/ProductSearch";
-import { FaSearch } from "react-icons/fa"; // Import FaSearch icon
+import { FaSearch } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -42,19 +42,16 @@ export default function BreakfastPage({ handelCount, increment }) {
     setBreakfastItems(sortedItems);
   };
 
-  // Handle sort order change
   const handleSortChange = (event) => {
     const selectedOrder = event.target.value;
     setSortOrder(selectedOrder);
     sortItems(selectedOrder);
   };
 
-  // Handle search input change
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value.toLowerCase());
   };
 
-  // Handle price range input change
   const handleMinPriceChange = (event) => {
     setMinPrice(event.target.value);
   };
@@ -63,7 +60,6 @@ export default function BreakfastPage({ handelCount, increment }) {
     setMaxPrice(event.target.value);
   };
 
-  // Filter items based on search query and price range
   const filteredItems = breakfastItems.filter(item => {
     const matchesName = item.title.toLowerCase().includes(searchQuery);
     const matchesPrice = (
@@ -79,22 +75,22 @@ export default function BreakfastPage({ handelCount, increment }) {
         <div className="image col-12">
           <img src={bre} alt="" className="rotate-animation img col-3" />
           <div className="text">
-          <h3>Healthy  </h3>
-          <h1> BreakFast ideas </h1>
+            <h3>Healthy  </h3>
+            <h1> BreakFast ideas </h1>
 
-          <div  className="text2 ">
-          <p>Stuk in the morning ? Find over 100 healthy.</p>
-          <p> breakfast ideas on our Website! suger free,</p>
-          <p> gluten free , and nutritious.</p>
+            <div className="text2 ">
+              <p>Stuk in the morning ? Find over 100 healthy.</p>
+              <p> breakfast ideas on our Website! suger free,</p>
+              <p> gluten free , and nutritious.</p>
 
-          </div>
+            </div>
           </div>
         </div>
       </div>
-      
+
       <div className="container">
         <div className="layout">
-        <div className=" col-md-3 ">
+          <div className=" col-md-3 ">
             <div className="place d-flex flex-column gap-3">
               <div className="mb-3">
                 <label htmlFor="searchByName" className="form-label">Search by name:</label>
@@ -144,12 +140,12 @@ export default function BreakfastPage({ handelCount, increment }) {
             </div>
           </div>
           <div className="cards-section col-md-9">
-          <div className="Back d-flex align-items-center gap-3">
+            <div className="Back d-flex align-items-center gap-3">
               <Link to="/CatAll" className="link">
-              <FontAwesomeIcon icon={faArrowLeft} className="icon" />
-              Back
+                <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+                Back
               </Link>
-              </div>
+            </div>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
               {filteredItems.map((product, index) => (
                 <ProductsComp

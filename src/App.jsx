@@ -18,7 +18,7 @@ import Register from "./Pages/LoginPage/Register";
 import toast from "react-hot-toast";
 import CheckOut from "./Pages/CheckOut";
 import Final from "./Pages/Final"
-export default function App({increment}) {
+export default function App() {
   const [bascet, setBascet] = useState([]);
 
   useEffect(() => {
@@ -28,8 +28,8 @@ export default function App({increment}) {
 
   const handelCount = (card) => {
     let cards = JSON.parse(localStorage.getItem("cards")) || [];
-    const existingCardIndex = cards.findIndex((item) => item.id === card.id);
-    console.log(existingCardIndex);
+    let existingCardIndex = cards.findIndex((item) => item.id === card.id);
+    // console.log(existingCardIndex);
     if (existingCardIndex !== -1) {
       cards[existingCardIndex].count += 1;
     } else {
@@ -43,7 +43,6 @@ export default function App({increment}) {
       position: "top-right",
     });
   };
-
   const handleDeleteAllItems = () => {
     localStorage.removeItem("cards");
     setBascet([]);
@@ -61,31 +60,31 @@ export default function App({increment}) {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout bascet={bascet.length} />}>
-            <Route index element={<Homepage handelCount={handelCount}  increment={increment} />} />
+            <Route index element={<Homepage handelCount={handelCount} />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="CatAll" element={<CatAll />} />
             <Route path="Final" element={<Final />} />
             <Route
               path="breakfast"
-              element={<BreakFastPage handelCount={handelCount} increment={increment} />}
+              element={<BreakFastPage handelCount={handelCount}  />}
             />
             <Route path="beans" element={<Beans />} />
             <Route
               path="lunch"
-              element={<LunchPage handelCount={handelCount} increment={increment}/>}
+              element={<LunchPage handelCount={handelCount}  />}
             />
             <Route
               path="dinner"
-              element={<DinnerPage handelCount={handelCount} increment={increment}/>}
+              element={<DinnerPage handelCount={handelCount} />}
             />
             <Route
               path="fruit"
-              element={<FruitPage handelCount={handelCount} increment={increment} />}
+              element={<FruitPage handelCount={handelCount} />}
             />
             <Route path="login" element={<LoginPage />} />
             <Route
               path="allpro"
-              element={<AllProduct handelCount={handelCount} increment={increment}/>}
+              element={<AllProduct handelCount={handelCount}  />}
             />
             <Route
               path="shopping"
@@ -97,7 +96,7 @@ export default function App({increment}) {
                 />
               }
             />
-            <Route path="CheckOut" element={<CheckOut  setBascet={setBascet}/>} />
+            <Route path="CheckOut" element={<CheckOut setBascet={setBascet} />} />
 
             <Route path="register" element={<Register />} />
           </Route>
